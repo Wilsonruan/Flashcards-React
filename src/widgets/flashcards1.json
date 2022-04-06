@@ -1,19 +1,20 @@
-{   
+{
     "instruction": "Intro text. What is the natural habitat of these animals? Click the card to reveal the answer.",
-    "data": [{
-            "img": "https://images.unsplash.com/photo-1546768292-fb12f6c92568?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+    "data": [
+        {
+            "img": "/flashcards-react/static/media/sshi5_07.202a.82c3b067ce3ab697ae648dec77ceb35d.svg"
         },
         {
-            "img": "https://images.unsplash.com/photo-1501446529957-6226bd447c46?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80"
+            "img": "/flashcards-react/static/media/sshi5_07.202b.d2dafd7345b075bc2f356e6bd341ca2d.svg"
         },
         {
-            "img": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+            "img": "/flashcards-react/static/media/sshi5_07.202c.44119989cece1fb38adad7219cf2ae6c.svg"
         },
         {
-            "img": "https://images.unsplash.com/photo-1475189778702-5ec9941484ae?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80"
+            "img": "/flashcards-react/static/media/sshi5_07.202d.a7b0793e69f9f0d4a7a1.jpg"
         },
         {
-            "img": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+            "img": "/flashcards-react/static/media/sshi5_07.202e.016f3148fadb9d57b6ab.jpg"
         }
     ]
 }
