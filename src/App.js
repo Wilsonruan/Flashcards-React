@@ -1,6 +1,7 @@
 import './App.css';
+import './css/Card.css';
 import Carousel from './components/Carousel';
-import Flashcards from './widgets/flashcards.json'
+import Flashcards from './widgets/flashcards1.json'
 
 function App() {
   return (

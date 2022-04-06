@@ -11,7 +11,11 @@ const Card = (props) => {
         }
         cardContainer.classList.toggle("is-flipped");
         flipCardInner.classList.toggle("is-flipped");
+
     };
+
+
+
 
     return (
         <div
