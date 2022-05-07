@@ -1,5 +1,5 @@
-import './App.css';
-import './css/Card.css';
+import './App.scss';
+import './css/Card.scss';
 import Carousel from './components/Carousel';
 
 function App() {

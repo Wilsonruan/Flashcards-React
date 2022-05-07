@@ -92,24 +92,24 @@
   clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%, 100% 100%);
 }
 
-.curl-bottom-right:before {
-  pointer-events: auto !important;
-  position: absolute;
-  content: "";
-  height: 0;
-  width: 0;
-  bottom: 0;
-  right: 0;
+// .curl-bottom-right:before {
+//   pointer-events: auto !important;
+//   position: absolute;
+//   content: "";
+//   height: 0;
+//   width: 0;
+//   bottom: 0;
+//   right: 0;
 
-  background: linear-gradient(315deg, transparent 45%, #9b9b9b 50%, #cccccc 56%, rgb(238, 238, 238) 80%);
-  /*For IE7-8-9*/
-  filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#ffffff', endColorstr='#000000');
-  z-index: 1000;
-  -webkit-transition-duration: inherit;
-  transition-duration: inherit;
-  -webkit-transition-property: width, height;
-  transition-property: width, height;
-}
+//   background: linear-gradient(315deg, transparent 45%, #9b9b9b 50%, #cccccc 56%, rgb(238, 238, 238) 80%);
+//   /*For IE7-8-9*/
+//   filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#ffffff', endColorstr='#000000');
+//   z-index: 1000;
+//   -webkit-transition-duration: inherit;
+//   transition-duration: inherit;
+//   -webkit-transition-property: width, height;
+//   transition-property: width, height;
+// }
 
 .curl-bottom-right:hover:before {
   width: 40px;
