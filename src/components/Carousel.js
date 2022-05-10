@@ -30,8 +30,10 @@ function Carousel(props) {
               >
                 <Card
                   key={items.index}
-                  src={items.img}
-                  alt={items.img}
+                  src={items.img[0]}
+                  alt={items.img[1]}
+                  text={items.text}
+                  answer={items.answer}
                   reduceMotion={props.reduceMotion}
                 />
               </div>

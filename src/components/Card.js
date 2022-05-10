@@ -31,14 +31,14 @@ const Card = (props) => {
                 <div className="flip-card-inner">
                     <div className="flip-card-front">
                         <img
-                            src={props.alt}
+                            src={props.src}
                             alt={props.alt}
                         />
-                        <p>Word here</p>
+                        <p>{props.text}</p>
                     </div>
                     {/* Content on the back of the card goes in flip-card-back */}
                     <div className="flip-card-back">
-                        <p>Information about card front here</p>
+                        <p>{props.answer}</p>
                     </div>
                 </div>
             </button>
