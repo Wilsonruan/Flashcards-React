@@ -5,13 +5,13 @@ import sshi202c from "../img/sshi5_07.202c.svg"
 import sshi202d from "../img/sshi5_07.202d.jpg"
 import sshi202e from "../img/sshi5_07.202e.jpg"
 
-const Card = (props) => {
+const Card = ({items, reduceMotion}) => {
 
     function flip(e) {
         // If OS animations have been disabled
         var cardContainer = e.currentTarget;
         const flipCardInner = cardContainer.children[0].children[0]
-        if (props.reduceMotion) {
+        if (reduceMotion) {
             // Add reduced motion toggle in here
         }
         cardContainer.classList.toggle("is-flipped");
@@ -31,14 +31,14 @@ const Card = (props) => {
                 <div className="flip-card-inner">
                     <div className="flip-card-front">
                         <img
-                            src={props.src[0]}
-                            alt={props.src[1]}
+                            src={items.img[0]}
+                            alt={items.img[1]}
                         />
-                        <p>{props.text}</p>
+                        <p>{items.text}</p>
                     </div>
                     {/* Content on the back of the card goes in flip-card-back */}
                     <div className="flip-card-back">
-                        <p>{props.answer}</p>
+                        <p>{items.answer}</p>
                     </div>
                 </div>
             </button>

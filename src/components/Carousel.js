@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { FlashcardsContext } from './Provider';
 import Card from './Card';
 import Top from './Top';
@@ -33,9 +33,7 @@ function Carousel(props) {
                 className={'carousel-container'}
               >
                 <Card
-                  src={items.img}
-                  text={items.text}
-                  answer={items.answer}
+                  items={items}
                   reduceMotion={props.reduceMotion}
                 />
               </div>
