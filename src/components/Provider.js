@@ -11,7 +11,8 @@ export default function ProviderComponent(props) {
     const mediaQueryList = window.matchMedia(QUERY);
 
     const contextInformation = {
-
+        ...JSON.parse(JSON.stringify(props.config)),
+        
         reduceMotion: mediaQueryList.matches,
         announcements: "",
         current: 0,

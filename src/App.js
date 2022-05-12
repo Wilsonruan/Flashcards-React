@@ -8,10 +8,8 @@ function App() {
   return (
     <main className="flashcard-main-container">
       <h1>Flashcards React App</h1>
-      <ProviderComponent>
-        <Carousel
-          instruction={Flashcards.instruction}
-          items={Flashcards.data} />
+      <ProviderComponent config={Flashcards}>
+        <Carousel />
       </ProviderComponent>
     </main>
   );

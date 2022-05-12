@@ -6,27 +6,29 @@ import Bottom from './Bottom';
 
 function Carousel(props) {
 
-  const [current, setCurrent] = useState(0)
   const context = useContext(FlashcardsContext)
 
   const nextSlide = () => { //Next Carousel button
-    setCurrent(current === props.items.length - 1 ? 0 : current + 1);
-    console.log(context.current)
+    context.updateContext({ 
+      current: context.current === context.items.length - 1 ? 0 : context.current + 1
+    })
   };
 
   const prevSlide = () => { //Prev Carousel button
-    setCurrent(current === 0 ? props.items.length - 1 : current - 1);
+    context.updateContext({ 
+      current: context.current === 0 ? context.items.length - 1 : context.current - 1
+    })
   };
 
   return (
     <>
       <Top
-        instruction={props.instruction}
+        instruction={context.instruction}
       />
-      {props.items.map((items, index) => {
+      {context.items.map((items, index) => {
         return (
           <>
-            {index === current && ( //Carousel items will appear below:
+            {index === context.current && ( //Carousel items will appear below:
               <div
                 className={'carousel-container'}
               >

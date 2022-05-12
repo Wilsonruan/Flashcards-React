@@ -1,6 +1,6 @@
 {
     "instruction": "Intro text. What is the natural habitat of these animals? Click the card to reveal the answer.",
-    "data": [
+    "items": [
         {
             "img": ["/flashcards-react/static/media/sshi5_07.202a.82c3b067ce3ab697ae648dec77ceb35d.svg", "no alt"],
             "text": "Text 1",
