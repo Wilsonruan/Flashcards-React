@@ -8,18 +8,6 @@ function Carousel(props) {
 
   const context = useContext(FlashcardsContext)
 
-  const nextSlide = () => { //Next Carousel button
-    context.updateContext({ 
-      current: context.current === context.items.length - 1 ? 0 : context.current + 1
-    })
-  };
-
-  const prevSlide = () => { //Prev Carousel button
-    context.updateContext({ 
-      current: context.current === 0 ? context.items.length - 1 : context.current - 1
-    })
-  };
-
   return (
     <>
       <Top
@@ -41,10 +29,7 @@ function Carousel(props) {
           </>
         )
       })}
-      <Bottom
-        prevSlide={prevSlide}
-        nextSlide={nextSlide}
-      />
+      <Bottom />
     </>
   )
 }
