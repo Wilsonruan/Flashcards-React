@@ -26,7 +26,7 @@ const Card = ({items, reduceMotion}) => {
             className="flash-card-container"
             onClick={flip}
         >
-            <button className="flip-card-btn curl-bottom-right">
+            <button className="flip-card-btn">
                 {/* container required to flip container and content together */}
                 <div className="flip-card-inner">
                     <div className="flip-card-front">
