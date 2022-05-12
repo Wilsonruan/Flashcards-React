@@ -31,8 +31,8 @@ const Card = (props) => {
                 <div className="flip-card-inner">
                     <div className="flip-card-front">
                         <img
-                            src={props.src}
-                            alt={props.alt}
+                            src={props.src[0]}
+                            alt={props.src[1]}
                         />
                         <p>{props.text}</p>
                     </div>

@@ -26,12 +26,9 @@ function Carousel(props) {
             {index === current && ( //Carousel items will appear below:
               <div
                 className={'carousel-container'}
-                key={items.index}
               >
                 <Card
-                  key={items.index}
-                  src={items.img[0]}
-                  alt={items.img[1]}
+                  src={items.img}
                   text={items.text}
                   answer={items.answer}
                   reduceMotion={props.reduceMotion}
