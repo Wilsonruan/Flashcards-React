@@ -11,7 +11,6 @@ export default function ProviderComponent(props) {
     const mediaQueryList = window.matchMedia(QUERY);
 
     const contextInformation = {
-        ...JSON.parse(JSON.stringify(props.config)),
 
         reduceMotion: mediaQueryList.matches,
         announcements: "",
@@ -106,7 +105,6 @@ export default function ProviderComponent(props) {
     return (
         <FlashcardsContext.Provider value={contextInfo}>
             <GlobalFun.Provider value={globalFun}>
-                <Announcer message={contextInfo.announcements} />
                 {props.children}
             </GlobalFun.Provider>
         </FlashcardsContext.Provider>

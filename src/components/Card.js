@@ -18,8 +18,8 @@ const Card = (props) => {
         flipCardInner.classList.toggle("is-flipped");
 
     };
-    if (sshi202e && sshi202d && sshi202c && sshi202b && sshi202a) {
-        console.log("Hello")
+    if (!sshi202e && !sshi202d && !sshi202c && !sshi202b && !sshi202a) {
+        console.log("Img not working")
     }
     return (
         <div

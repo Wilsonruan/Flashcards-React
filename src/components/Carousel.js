@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { FlashcardsContext } from './Provider';
 import Card from './Card';
 import Top from './Top';
 import Bottom from './Bottom';
@@ -6,9 +7,11 @@ import Bottom from './Bottom';
 function Carousel(props) {
 
   const [current, setCurrent] = useState(0)
+  const context = useContext(FlashcardsContext)
 
   const nextSlide = () => { //Next Carousel button
     setCurrent(current === props.items.length - 1 ? 0 : current + 1);
+    console.log(context.current)
   };
 
   const prevSlide = () => { //Prev Carousel button
