@@ -1,8 +1,8 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { FlashcardsContext, GlobalFun } from './Provider';
 import '../css/Bottom.scss';
 
-function Bottom(props) {
+function Bottom() {
     const context = useContext(FlashcardsContext)
     const globalFun = useContext(GlobalFun)
     const savedFirstCard = context.items[0];
@@ -38,7 +38,12 @@ function Bottom(props) {
     
 
     return (
-        <div className='bottom-container'>
+        <div 
+        className='bottom-container' 
+        ref={context.bottomRef}
+        onFocus={() => {context.updateContext({ inBottom: true })}} 
+        onBlur={() => {context.updateContext({ inBottom: false })}}
+      >
             <button className='prev-arrow' onClick={prevSlide} />
             <button className='rand-arrow' onClick={randSlide}><div> &nbsp;Shuffle</div></button>
             <button className='next-arrow' onClick={nextSlide} />

@@ -34,29 +34,27 @@ function Carousel(props) {
   }
 
   return (
-    <>
+    <div className='flashcards-container' onKeyDown={onKeyDown}>
       <Top
         instruction={context.instruction}
       />
       {context.items.map((items, index) => {
         return (
-          <div className='flashcards-container' onKeyDown={onKeyDown}>
-            <div className={'carousel-container'}>
-              <div class="card-display-container" ref={context.containerRef}>
-                {index === context.current && ( //Carousel items will appear below:
-                  <Card
-                    keyId={index}
-                    items={items}
-                    reduceMotion={props.reduceMotion}
-                  />
-                )}
-              </div>
+          <div className={'carousel-container'}>
+            <div class="card-display-container" ref={context.containerRef}>
+              {index === context.current && ( //Carousel items will appear below:
+                <Card
+                  keyId={index}
+                  items={items}
+                  reduceMotion={props.reduceMotion}
+                />
+              )}
             </div>
           </div>
         )
       })}
       <Bottom />
-    </>
+    </div>
   )
 }
 
