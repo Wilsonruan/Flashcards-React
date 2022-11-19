@@ -1,9 +1,4 @@
 import React from 'react'
-import sshi202a from "../img/sshi5_07.202a.svg"
-import sshi202b from "../img/sshi5_07.202b.svg"
-import sshi202c from "../img/sshi5_07.202c.svg"
-import sshi202d from "../img/sshi5_07.202d.jpg"
-import sshi202e from "../img/sshi5_07.202e.jpg"
 
 const Card = ({items, reduceMotion}) => {
 
@@ -18,9 +13,6 @@ const Card = ({items, reduceMotion}) => {
         flipCardInner.classList.toggle("is-flipped");
 
     };
-    if (!sshi202e && !sshi202d && !sshi202c && !sshi202b && !sshi202a) {
-        console.log("Img not working")
-    }
     return (
         <div
             className="flash-card-container"
