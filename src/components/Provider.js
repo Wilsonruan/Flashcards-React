@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState, createContext, useRef } from "react";
-import Announcer from './Announcer';
 
 export const FlashcardsContext = createContext()
 export const GlobalFun = createContext()
@@ -59,8 +58,9 @@ export default function ProviderComponent(props) {
         },
         mapMiddleRef: () => {
             midClassName.map((className) => {
-                middleRef.push(...contextInfo.containerRef.current.getElementsByClassName(className))
+                return middleRef.push(...contextInfo.containerRef.current.getElementsByClassName(className))
             })
+            
         },
         setCurrentFocus: (e) => {
             e.preventDefault();
@@ -98,7 +98,7 @@ export default function ProviderComponent(props) {
         // checks to make sure that the items we grabbed have to be tabbed through
         findTabIndex: (elements) => {//finds all cards that have tabindex
         var tabZero = Array.prototype.filter.call(elements,
-            (el) => { { return el.tabIndex == 0 } })
+            (el) => { return el.tabIndex === 0 })
         return tabZero;
         }
     }   
